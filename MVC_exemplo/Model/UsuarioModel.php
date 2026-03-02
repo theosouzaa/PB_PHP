@@ -26,4 +26,17 @@ class Usuario{
         return $_SESSION['usuarios'] ?? [];
     }
 
+
+    public static function buscar($id){
+        return $_SESSION['usuarios'][$id] ?? null;
+    }
+
+    public function atualizar($id){
+        if(isset($_SESSION['usuarios'][$id])){ // Verifica se o usuário existe antes de atualizar
+            $_SESSION['usuarios'][$id] = [     // Atualiza o usuário com os novos dados
+                'nome' => $this -> nome,
+                'email' => $this -> email,
+            ];
+        }
+    }
 }
