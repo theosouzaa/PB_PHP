@@ -17,6 +17,7 @@
                 <td><?= $u['nome']?></td>
                 <td><?= $u['email']?></td>
                 <td><a href="telaEditar?id=<?= $id ?>">Editar</a></td>
+                <td><a href="excluir?id=<?= $id ?>">Excluir</a></td>
             </tr>
         <?php endforeach; ?>
     </table>
