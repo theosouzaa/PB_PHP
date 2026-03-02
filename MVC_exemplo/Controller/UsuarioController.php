@@ -43,3 +43,5 @@ class UsuarioController{
         exit;
     }
 }
+
+?>
