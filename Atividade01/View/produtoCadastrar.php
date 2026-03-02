@@ -8,13 +8,16 @@
 </head>
     <body>
         <h2>Controle de estoque </h2>
+
+        <a href="listar">Estoque de produtos</a><br><br>
+        
         <form action="salvar" method="POST" style="padding:15px border-radius:8px; width:300px">
             Nome produto: <br>
             <input type="text" name="nome" value="" style="width:90%; margin-bottom:10px"><br>
             Data validade: <br>
-            <input type="date" name="validade" value="" style="width:90%; margin-bottom:10px"><br>
+            <input type="date" name="data" value="" style="width:90%; margin-bottom:10px"><br>
             Preço: <br>
-            <input type="number" name="preco" value="" style="width:90%; margin-bottom:10px"><br>
+            <input type="number" step="0.01" name="preco" value="" style="width:90%; margin-bottom:10px"><br>
             Quantidade: <br>
             <input type="number" name="quantidade" value="" style="width:90%; margin-bottom:10px"><br>
             <button type="submit" style="padding:5px 10px;">Cadastrar</button>
