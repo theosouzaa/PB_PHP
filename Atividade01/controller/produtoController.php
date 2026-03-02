@@ -27,9 +27,9 @@ Class ProdutoController{
 
     public function listarProdutos(){
         $produtos = Produto::listar();
-        echo "<pre>";
-        print_r($produtos);
-        echo"</pre>";
+        // echo "<pre>";
+        // print_r($produtos);
+        // echo"</pre>";
         require 'view/produtoListar.php';
     }
 
